@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# 🧾 Intellectual Property Registration DApp (Blockchain)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple decentralized application (DApp) for registering and managing intellectual property (IP) using blockchain technology.  
+Users can register patents, copyrights, trademarks, and other forms of IP securely on the blockchain.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🔐 IP Management
+- Register new IP  
+- View detailed IP information  
+- Transfer IP ownership  
+- Update IP information  
+- Verify current IP ownership  
+- View full transfer history  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 📚 Supported IP Types
+- Patent  
+- Copyright  
+- Trademark  
+- Other  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ Tech Stack
+- **Frontend:** React (JavaScript, CSS)  
+- **Blockchain:** Sepolia Testnet (sepoliaETH)  
+- **Smart Contract:** Solidity  
+- **Wallet:** MetaMask  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Smart Contract Setup (Important)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before running the DApp, you **must add your own contract ABI and contract address**.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Steps:
+1. Write your Solidity contract (e.g., `ipregistry.sol`).
+2. Open **Remix IDE** (browser-based Solidity compiler).
+3. Paste your Solidity code into a new file.
+4. **Compile** the contract using Remix Compiler.
+5. Deploy it to **Sepolia Test Network** using MetaMask.
+6. After deployment:
+   - Copy the **ABI** → paste it into `abi.js`
+   - Copy the **Contract Address** → paste it into `config.js`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Without adding ABI + address, the app cannot interact with the blockchain.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🧰 About Remix IDE
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Remix IDE is an online tool for writing, compiling, and deploying Solidity smart contracts.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Using Remix, you can:
+- Write `.sol` files  
+- Compile Solidity code  
+- Deploy contracts to Sepolia  
+- Retrieve deployed contract address and ABI  
+- Debug transactions  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## 🖥️ Running the React Application
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install dependencies:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm install
